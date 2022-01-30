@@ -1,0 +1,120 @@
+.about {
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    
+ }
+ .aboutLeft{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    height: 100%;
+}
+ .aboutRight{
+     flex: 1;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+ }
+ .aboutC.background{
+     position: absolute;
+     top: 50px;
+     left: 50px;
+     background-color: rgb(95, 214, 149);
+ }
+ .aboutC{
+     width: 60%;
+     height: 70vh;
+     border-radius: 30px;
+     position: relative;
+     overflow: hidden;
+ }
+ .aboutImg{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     
+ }
+
+
+
+ .s1{
+     display: flex;
+ }
+ .s2{
+     display: flex;
+ }
+ .aboutExampleItem{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    margin-left: 10px;
+    align-items: center;
+ }
+.aboutExampleText{
+    font-size: 20px;
+    color: rgb(95, 214, 149);
+    display: flex;
+    margin: 20px;   
+    align-items: center;
+    
+}
+
+.aboutTitle{
+    font-weight: 400;
+    font-weight: bold;
+    color: rgb(95, 214, 149);
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.aboutExampleText h4{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.aboutSubtitle{
+    margin: 20px 0px;
+}
+
+@media screen and (max-width: 480px) {
+    .a{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .aboutRight, .aboutExamples{
+        flex-direction: column;
+       width: 5px;
+        height: 100%;
+        margin-bottom: -50%;
+    }
+    .aboutExampleItem{
+        width: 60px;
+        height: 60px;
+    }
+   .s1{
+      display: table;
+   }
+   .s2{
+       display: none;
+   }
+   .aboutExampleText h4{
+       display: none;
+   }
+   .aboutImg{
+       margin-top: 50px;
+       border-radius: 20px;
+       width: 200px;
+       height: 100%;
+   }
+   .aboutC.background{
+    display: none;
+}
+    .aboutTitle{
+        margin-right: 100%;
+        font-size: 40px;
+        margin-top: 70px;
+    }
+  }

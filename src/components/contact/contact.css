@@ -1,0 +1,86 @@
+.contact{
+    height: 100vh;
+    position: relative;
+
+}
+
+.contactBackground{
+    width: 20px;
+    height: 100%;
+    background-color: rgb(95, 214, 149);
+    position: absolute;
+
+}
+
+.contactWrapper{
+    padding: 50px;
+    display: flex;
+}
+.contactLeft{
+    flex: 1;
+}
+.contactRight{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+}
+.contactTitle{
+    font-size: 60px;
+    width: 80%;
+}
+.contactInfoItem{
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+    font-weight: 300;
+}
+.contactIcon{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.contactDescription{
+    font-weight: 100;
+}
+form{
+    margin-top: 10px;
+}
+input{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+textarea{
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+button{
+    border: none;
+    padding: 15px;
+    background-color: rgb(95, 214, 149);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+    .contactWrapper{
+        flex-direction: column;
+        padding: 10px 50px;
+    }
+    .contactTitle{
+        font-size: 30px;
+    }
+    .contactInfoItem{
+        margin: 20px 0px;
+        width: 100%;
+        
+  }
+}
